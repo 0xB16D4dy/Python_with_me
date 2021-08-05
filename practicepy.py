@@ -22,11 +22,13 @@
 # #cách 2
 # # print("xin",'chào','tôi','tên','là',sName,sep='--');
 
+
 # bài 3
 # dec = int(input("nhập số thập phân: "))
 # c = hex(dec)
 # print("Số thập phân %d trong hệ bát phân là: %o" %(dec,dec))
 # print("Số thập phân %d trong thập lục phân là: %r" %(dec,c))
+
 
 # bài 4
 # dec = input("nhập số thập phân: ")
@@ -46,6 +48,7 @@
 
 # if isParse:
 #     print("Số thập phân %d trong hệ bát phân là: %o" %(dec,dec))
+
 
 # bài 5
 # dec = float(input())
@@ -68,6 +71,17 @@
 # except:
 #     print("input wrong")
 
+
+# # bài 7 hiệu ứng xuất họ tên
+# from time import sleep
+# your_Firstname = input("Nhập tên: ")
+# your_Familyname = input("Nhập họ: ") + " "
+
+# for i in your_Familyname + your_Firstname:
+#     print(i, end = '', flush = True)
+#     sleep(0.1)
+
+
 # bài 8
 # # nhập chuỗi nhiều kí tự và tách ra
 # # a =  input()
@@ -78,6 +92,7 @@
 # # print(*a) #in phần tử của list ra thành số.
 # print(sum(s))
 
+
 # # bài 9
 # listValue = [i for i in input().split()]
 # try:
@@ -85,3 +100,6 @@
 #     print("tổng của danh sách là: ", sum(stringValue))
 # except:
 #     print("Input Wrong!!!") 
+
+
+# bài 10

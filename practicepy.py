@@ -103,4 +103,22 @@
 
 
 # bài 10
-#hello
+# with open("input.inp", "r+") as input:
+#     name = input.readline().rstrip("\n")
+#     age = input.readline().rstrip("\n")
+#     sage = int(age) + 20
+# print("Vao 20 nam nua, tuoi cua {name} se la {age}".format(name=name,age=sage))
+# print("Vao 20 nam nua, tuoi cua {} se la {}".format(name,int(age) + 20))
+
+
+# bài 11
+try:
+    with open("input.inp", "r") as inputf:
+        name = inputf.readline().rstrip("\n")
+        age = inputf.readline().rstrip("\n")
+        age=int(age)
+        print("Vao 20 nam nua, tuoi cua {} se la {}".format(name,age + 20))
+except FileNotFoundError:
+    print("not found input file")
+except:
+    print("input wrong!!!")

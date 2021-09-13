@@ -20,3 +20,17 @@ print("z = ", z)
 # cách lấy cùng lúc nhiều giá trị cùng 1 lúc:
 x = [int(x) for x in input("nhập các giá trị: ").split()]
 print("danh sách các biến: ", x)
+
+# đảo ngược một chuỗi
+a[::-1]
+
+# tách chuỗi thành từng kí tự 8bit rồi dịch phải
+l=[]
+m=""
+k = "11101010100101"
+for i in range(0,len(x),8):
+    l.append(x[i:i+8])
+for i in l:
+    i = chr((int(i,2) >> 1))
+    m+=i
+print(m)
